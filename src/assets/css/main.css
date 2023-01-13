@@ -1,9 +1,10 @@
 .wrap {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
-    /* width: 100vw;
-    height: 100vh; */
+    align-items: center; */
+    width: 100vw;
+    height: 100vh;
+    max-width:100%;
 }
 
 .wrap .inner {
@@ -104,11 +105,106 @@ header #gnb #more_btn:hover {
 main {
     width: 100%;
     height: 2769px;
+    /* height: 100%; */
     background-color: yellow;
 }
 
 footer {
     width: 100%;
-    height: 213px;
-    background-color: green;
+    height: 423px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+footer .footer_container {
+    width: 1130px;
+    height: 423px;
+    
+}
+footer .footer_Image {
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e4e8eb;
+    border-bottom: 1px solid #e4e8eb;
+}
+footer .notice_area {
+    
+    border-bottom: 1px solid #e4e8eb;
+    padding: 16px 0 15px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer .box_wrap {
+    float: left;
+    padding: 20px 0;
+    width: 780px;
+    display: block;
+    flex-direction: column;
+       
+}
+
+footer .creators_box {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    height: 15px;
+}
+
+footer .partners_box {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+       
+}
+footer .developers_box {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    height: 15px;
+       
+}
+footer .creators_box > a{
+    padding-left: 10px;
+    font-size: 12px;
+}
+footer .partners_box > a{
+    padding-left: 10px;
+    font-size: 12px;
+}
+footer .developers_box > a{
+    padding-left: 10px;
+    font-size: 12px;
+}
+footer  .title {
+    width: 87px;;
+       
+}
+footer .corp_area{
+    width: 1130px;
+    height: 40px;
+    border-top: 1px solid #e4e8eb;
+    float: left;
+    
+}
+footer .corp_area > a {
+    padding-right: 10px;
+    font-size: 14px;
+    float: left;
+    padding-top: 25px;
+}
+footer .test{
+    display: flex;
+}
+footer .corp_service{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 106px;
+}
+
