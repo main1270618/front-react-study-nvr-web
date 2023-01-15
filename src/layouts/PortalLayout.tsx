@@ -75,7 +75,14 @@ function PortalLayout () {
                     </div>  
                 </header>
                 <main>
-                    
+                    <div className='main-wrap'>
+                        <div className='right-content'>
+
+                        </div>
+                        <div className='left-content'>
+
+                        </div>
+                    </div>
                 </main>
                 <footer>
                     <div className="footer_container">
