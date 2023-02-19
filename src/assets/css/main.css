@@ -123,18 +123,232 @@ main .main-wrap .right-content {
 }
 
 main .main-wrap .left-content {
-    background-color: green;
+    background-color: white;
     width: 350px;
     height: 100%;
+}
+.login_box{
+    padding: 5px 16px 12px 17px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    
 }  
+.login_box > .link_login{
+    display: block;
+    padding: 15px;
+    background-color: #19ce60;
+    border: 1px solid #15c654;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
 
+.login_box > .link_login > .ico_naver{
+    width: 60px;
+    height: 12px;
+    font-size: 17px;
+}
+
+.login_sub_area {
+    margin: 14px 8px 0 4px;
+    font-size: 12px;
+    height: 20px;
+    
+}   
+
+.login_sub_area > .login_find {
+    float: left;
+    
+}
+.login_join{
+    float: right;
+
+}
+.card_wrap{
+    /* display: flex; */
+    /* flex-direction: row; */
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 48px;
+    border: 1px solid #dae1e6;
+    /* justify-content: space-around; */
+    align-items: center;
+    width: 100%;
+
+    
+}   
+.issue_box{
+   font-size: 12px; 
+}
+.issue_title{
+    font-size: 12px;
+    color: black;
+}
+.card_nav {
+    display: inline-block;
+    width: 30%;
+}
+.card_nav > .right_nav{
+    border: 1px solid #dae1e6;
+
+}
+.card_nav > .left_nav{
+    border: 1px solid #dae1e6;
+
+}
+.board_player{
+    clear:both;
+    margin-top: 10px;
+    background-color: black;
+    height: 200px;
+    width: 100%;
+}
+.inner_img{
+    height: 200px;
+    width: 100%;
+}
+.shop_header{
+    font-size: 12px;
+    margin-bottom: 10px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+.shop_list > a{
+    padding-left: 5px;
+}
+.content{
+    height: 1730px;
+    border: 1px solid #e4e8eb;
+}
+.group_mall{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    font-size: 12px;
+    flex-direction: column;
+}
+.group_mall > .group_area{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    height: 70px;
+}
+.group_mall > .group_area > a{
+    padding: 12px 4px 11px 10px;
+    
+} 
+.cardItemImage{
+    height: 70px !important;
+    object-fit: fill;
+}
+
+.group_goods{
+    padding: 0px 8px 20px;
+    border: 1px solid #dae1e6;
+
+}
+.ant-list-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ant-list-pagination:nth-last-child(3){
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+    
+}
+.list_event {
+    font-size: 12px;
+    border: 1px solid #dae1e6;
+    height: 200px;
+}
+.list_event > li{
+    padding-top: 10px;
+} 
+ li::marker{
+    width: 4px;
+    height: 4px;
+    color: #15c654;
+    margin-right: 8px;
+    vertical-align: 2px;
+}
+.shop_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+}
+.group_pnf{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.shopItemList{
+   width: 100%;
+   height: 500px;
+   margin-left: 10px;
+
+}
+.title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    line-height: 16px;
+    text-align: center;
+   
+}
+.oneplusitemlist{
+    width: 100%;
+    height: 360px;
+    border: 1px solid #dae1e6;
+}
+.oneplus_item{
+    position: relative;
+    display: block;
+    float: left;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    white-space: pre-line
+}
+.ico_one_plus{
+    position: absolute;
+    padding-left: 10px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 15px;
+    
+}
+.ico_plus_logo{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+
+    
+}
 footer {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 423px;
     background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     
 }
 footer .footer_container {
@@ -226,4 +440,6 @@ footer .corp_service{
     width: 350px;
     height: 106px;
 }
+
+
 
