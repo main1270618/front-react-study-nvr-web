@@ -1,8 +1,17 @@
+import { Newsstand } from '../../components/newsstand';
+
 function PortalView() {
     return (
-        <div>
-            This is portal-view.
-        </div>
+        <main>
+            <div className='main-wrap'>
+                <div className='right-content'>
+                    <Newsstand/>
+                </div>
+                <div className='left-content'>
+                    
+                </div>
+            </div>
+        </main>
     );
 }
 

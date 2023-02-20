@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 /* Layouts */
-import PortalLayout from '../layouts/PortalLayout';
+import { PortalLayout } from '../layouts';
 
 /* Pages */
 import PortalView from '../pages/portal/PortalView';
