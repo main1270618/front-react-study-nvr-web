@@ -5,7 +5,7 @@ import { useNewsstandViewList } from './hooks';
 
 function NewsstandViewList( props: any ) {
     /* TMP DATA */
-    // console.log('[NewsstandViewList:sta]');
+    console.log('[NewsstandViewList:sta]');
     const {
         state,
         handleCategoryBoxClick,
@@ -13,7 +13,7 @@ function NewsstandViewList( props: any ) {
     } = useNewsstandViewList( props );
 
     return (
-        <div id='newsstand_view_pick_list' className='newsstand-view-pick-list' style={{ display: 'none' }}>
+        <div id='newsstand_view_pick_list' className='newsstand-view-pick-list'>
             <CategoryBox 
                 // rowdatas={ state.categoryBox.categories }
                 rowdatas={ props.rowdatas }

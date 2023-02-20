@@ -4,9 +4,8 @@ import { NewsstandViewList } from './newsstand-view-list';
 import type { NewsstandViewProps } from './types';
 
 function NewsstandView( props:NewsstandViewProps ) {
-
-    // console.log('[NewsstandView:sta]');
-
+    console.log('[NewsstandView:sta]');
+    
     /* TMP DATA */
     const newsstandViewTileListRowDatas = [
         {
@@ -133,8 +132,8 @@ function NewsstandView( props:NewsstandViewProps ) {
 
     return (
         <div id='newsstand_view_container' className='newsstand-content'>
-            <NewsstandViewList rowdatas={ props.categories } />
-            <NewsstandViewTile rowdatas={ newsstandViewTileListRowDatas } />
+            { props.selectedTabId === 'tab_newsstand_view_list' && <NewsstandViewList rowdatas={ props.categories } /> }
+            { props.selectedTabId === 'tab_newsstand_view_tile' && <NewsstandViewTile rowdatas={ newsstandViewTileListRowDatas } /> }
         </div>
     );
 }

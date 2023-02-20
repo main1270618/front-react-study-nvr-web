@@ -6,6 +6,7 @@ function useNewsstand( props: any ) {
 
     const [ state, setState ] = useState({
         categoryArticleList: [] as any,
+        selectedTabId: 'tab_newsstand_view_tile',
     });
 
     const fetchCategoryArticleList = async() => {
@@ -17,11 +18,21 @@ function useNewsstand( props: any ) {
         });
     };
 
+    const handleNewsstandClick = ( e: any ) => {
+        setState({
+            ...state,
+            selectedTabId: e.currentTarget.id,
+        });
+    }
+
     useEffect(() => {
         fetchCategoryArticleList();
     }, []);
 
-    return { state };
+    return { 
+        state,
+        handleNewsstandClick,
+    };
 }
 
 export default useNewsstand;

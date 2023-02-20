@@ -1,4 +1,6 @@
 function NewsstandViewTile( props: any ) {
+    console.log('[NewsstandViewTile:sta]');
+
     const handleItemMouseEnter = ( e: any ) => {
         // console.log("NewsstandViewTile.handleItemMouseEnter.e ===== ", e);
         // debugger

@@ -6,22 +6,13 @@ import useNewsstand from './hooks';
 import './styles.css';
 
 function Newsstand( props: any ) {
-    // console.log('[Newsstand:sta]');
+    console.log('[Newsstand:sta]');
+
     let {
         state,
+        handleNewsstandClick,
     } = useNewsstand( props );
     
-    const handleViewBtnClick = ( e: any ) => {
-        let els = document.querySelectorAll('#newsstand_view_container > div');
-        els.forEach( el => ( el as HTMLElement ).style.display = 'none' );
-
-        let targetId = e.currentTarget.attributes[ 'aria-controls' ].value;
-        let el = document.getElementById( targetId );
-
-        if( el!.id === 'newsstand_view_pick_list' ) el!.style.display = 'flex';
-        else if( el!.id === 'newsstand_view_tile_list' ) el!.style.display = 'grid';
-    }
-
     return (
         <div className='newsstand'>
             <div className='newsstand-header'>
@@ -43,10 +34,10 @@ function Newsstand( props: any ) {
                     <a href='#none' style={{ fontWeight: 'bold' }}> 전체언론사 </a>
                 </div>
                 <div id='newsstand_view_btns' className='set-area'>
-                    <a href='#none' role='tab' aria-controls='newsstand_view_pick_list' onClick={ handleViewBtnClick }>
+                    <a href='#none' id='tab_newsstand_view_list' role='tab' onClick={ handleNewsstandClick }>
                         <i className='ico-list'></i>
                     </a>
-                    <a href='#none' role='tab' aria-controls='newsstand_view_tile_list' onClick={ handleViewBtnClick }>
+                    <a href='#none' id='tab_newsstand_view_tile' role='tab' onClick={ handleNewsstandClick }>
                         <i className='ico-tile'></i>
                     </a>
                     <a href='#none' role='tab'>
@@ -55,7 +46,7 @@ function Newsstand( props: any ) {
                 </div>
             </div>
 
-            <NewsstandView categories={ state.categoryArticleList } />
+            <NewsstandView selectedTabId={ state.selectedTabId } categories={ state.categoryArticleList } />
         </div>
     );
 }

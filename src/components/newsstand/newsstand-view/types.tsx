@@ -22,6 +22,7 @@ interface ArticleBoxProps {
 }
 
 interface NewsstandViewProps {
+    selectedTabId: string,
     categories: {
         id: string,
         nm: string,
